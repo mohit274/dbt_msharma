@@ -4,9 +4,11 @@ with orders as (
     id as order_id,
     user_id as customer_id,
     order_date,
-    status
+    status as order_status
 
     from raw.jaffle_shop.orders
     
 )
+
+select * from orders
 
